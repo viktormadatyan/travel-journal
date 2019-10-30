@@ -38,13 +38,44 @@ body {
     transition: transform 0.3;
 }
 
-.open-or-close:hover div:first-child {
+.open-or-close:close div:first-child {
     transform: translateY(0.375em) rotate(45deg);
 
 }
-.open-or-close:hover div:last-child {
+.open-or-close:close div:last-child {
     transform: translateY(-0.375em) rotate(-45deg);
 
+}
+
+.navigation {
+    background-color: rgba(20,20,20,0.9);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    
+
+}
+
+.hidden {
+    display:  none;
+}
+
+.menu {
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.5;
+    text-align: center;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+
+}
+.menu a:hover {
+    text-decoration: underline;
 }
 .city { 
 position: relative;

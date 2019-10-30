@@ -9,17 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css?v=1.0">
+   
   </head>
   <body>
     <header class="header">
       <h1 class="primary-heading">Travel Journal</h1>
-      <botton class="open-or-close">
+      <botton class="open-or-close" id="menubtn">
         <div></div>
         <div></div>
       </botton>
     </header>
 
-    <nav>
+    <nav class="navigation hidden" id="navpanel">
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        
+      </ul>
 
     </nav>
     
@@ -41,5 +49,7 @@
         <img src="/img/lagos.jpeg" alt="Lagos" class="city-photo">
       </article>
     </main>
+
+     <script> src="js/index.js"</script>
   </body>
 </html>
